@@ -1,0 +1,1045 @@
+/* General Reset */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px 30px;
+}
+
+header,
+nav {
+  position: relative;
+  z-index: 3;
+}
+
+.logo-container .logo {
+  width: 80px;
+  height: auto;
+  margin-left: 20px;
+  background: transparent;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: black;
+  font-weight: 600;
+  text-decoration:none;
+  font-size: 20px;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: red;
+  text-decoration:none;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Overlay with text */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Darker for better readability */
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  color: white;
+  text-align: center;
+}
+
+.video-overlay .container {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Hero Text */
+.hero-section h6 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.hero-section h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.hero-section h2:hover {
+  color: orangered;
+  cursor: pointer;
+}
+
+.hero-section p {
+  font-size: 1rem;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.hero-section a.btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero-section a.btn:hover {
+  background-color: darkred;
+}
+
+/* Page 2 placeholder */
+
+.page2 {
+  background-color: white;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container .container1 {
+  width: 350px;
+  height: 300px;
+  background-color: rgb(199, 76, 76);
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.container .container1 img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.container .container1 h3,
+.container .container1 h4 {
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.container .container1 p {
+  font-size: 13px;
+  line-height: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+/*page3 */
+.page3 {
+  width: 100vw;
+  background-image: url(https://templatemo.com/templates/templatemo_569_edu_meeting/assets/images/meetings-bg.jpg);
+  padding-bottom: 60px;
+}
+
+.page3 h3 {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+
+}
+
+.page3 h3:hover {
+  color: brown;
+}
+
+.meetings-section {
+  padding: 60px 30px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.section-title {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 80%;
+  height: 1px;
+  background-color: rgb(248, 241, 241);
+}
+
+.meeting-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.meeting-sidebar {
+  background: whitesmoke;
+  border-radius: 20px;
+  padding: 30px 20px;
+  height: 450px;
+  width: 300px;
+  flex-shrink: 0;
+  margin-top: 40px;
+
+}
+
+.meeting-sidebar h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-right: 25px;
+  font-size: 18px;
+  color: #000;
+}
+
+.meeting-sidebar ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.meeting-sidebar li:hover {
+  color: #b73737;
+  cursor: pointer;
+}
+
+.meeting-sidebar li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  color: #333;
+}
+
+.meeting-sidebar button {
+  background-color: #b73737;
+  color: white;
+  border: none;
+  margin-left: 37px;
+  border-radius: 25px;
+  padding: 12px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.meeting-sidebar button a{
+  text-decoration: none;
+  color: white;
+}
+.meeting-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 110px;
+  flex: 1;
+}
+.card-container button a{
+  text-decoration: none;
+  color: white;
+}
+.meeting-cards .meeting-card1 {
+  background: whitesmoke;
+  border-radius: 20px;
+  height: 380px;
+  overflow: hidden;
+  margin-left: 35px;
+  margin-top: 20px;
+  width: 300px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.meeting-card2 {
+  background: whitesmoke;
+  border-radius: 20px;
+  height: 300px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.meeting-card3 {
+  background: whitesmoke;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 340px;
+  margin-left: 100px;
+  margin-top: -5px;
+  width: 300px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.meeting-card4 {
+  background: whitesmoke;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 300px;
+  height: 340px;
+  margin-top: -95px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.meeting-card1:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(241, 235, 235, 0.2);
+  background-color: #fff9c4;
+}
+
+.meeting-card2:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(241, 235, 235, 0.2);
+  background-color: #fff9c4;
+}
+
+.meeting-card3:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(241, 235, 235, 0.2);
+  background-color: #fff9c4;
+}
+
+.meeting-card4:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(241, 235, 235, 0.2);
+  background-color: #fff9c4;
+}
+
+.meeting-card1 .details h5,
+.meeting-card1 .details p {
+  transition: color 0.3s ease;
+  color: #000;
+}
+
+.meeting-card3 .details h5,
+.meeting-card3 .details p {
+  transition: color 0.3s ease;
+  color: #000;
+}
+
+.meeting-card4 .details h5,
+.meeting-card4 .details p {
+  transition: color 0.3s ease;
+  color: #000;
+}
+
+.meeting-card2:hover .details h5,
+.meeting-card2:hover .details p {
+  transition: color 0.3s ease;
+  color: #000;
+
+}
+
+.image-box {
+  position: relative;
+}
+
+.image-box img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+
+.content {
+  display: flex;
+  padding: 30px;
+  padding-left: 35px;
+  align-items: flex-start;
+}
+
+.details h5 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.details p {
+  font-size: 13px;
+  color: #555;
+}
+
+/*4thpage*/
+.page4 {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('page4img.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  position: relative;
+}
+
+/* Apply Boxes */
+.apply-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.apply-box:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(241, 235, 235, 0.2);
+  background-color: #111111;
+}
+
+.apply-box:hover h3 {
+  color: crimson;
+}
+
+.apply-box h3 {
+  font-weight: bold;
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.apply-box p {
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* Buttons */
+.btn-red a,
+.btn-yellow a {
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-red a {
+  background-color: #e74c3c;
+}
+
+.btn-red a:hover {
+  background-color: #c0392b;
+}
+
+.btn-yellow a {
+  background-color: #f39c12;
+}
+
+.btn-yellow a:hover {
+  background-color: #d68910;
+}
+
+/* Accordion */
+.accordion {
+  max-width: 700px;
+  margin: auto;
+  margin-left: 120px;
+  margin-top: 100px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion input[type="radio"] {
+  display: none;
+}
+
+.accordion label {
+  display: block;
+  padding: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: color 0.3s ease;
+}
+
+.accordion label:hover {
+  background-color: #f9f9f9;
+}
+
+.accordion input[type="radio"]:checked+label {
+  color: #f2552c;
+}
+
+.accordion .content {
+  display: none;
+  padding: 20px;
+  background-color: #fcfcfc;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.accordion input[type="radio"]:checked+label+.content {
+  display: block;
+}
+
+.accordion .content strong {
+  color: #000;
+}
+
+.accordion .content span {
+  color: #e57373;
+}
+
+/*page5*/
+.page5 {
+  height: 100vh;
+  width: 100vw;
+}
+
+.page5 h2 {
+  margin-top: 80px;
+  margin-left: 100px;
+  text-transform: uppercase;
+}
+
+.page5 .line {
+  margin-left: 100px;
+  width: 1150px;
+}
+/* Wrapper around the scroll area */
+.scroll-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 40px 0;
+  gap: 15px;
+}
+
+/* Hide the scrollbar */
+.card-container::-webkit-scrollbar {
+  display: none;
+}
+.card-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Scroll container */
+.card-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  gap: 30px;
+  padding: 10px 0;
+  width: 100%;
+}
+
+/* Card styling */
+.card {
+  min-width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 12px;
+  scroll-snap-align: start;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card h5 {
+  margin: 15px 0 10px 20px;
+  color: #000;
+  font-size: 16px;
+}
+
+.line1 hr {
+  width: 80%;
+  margin: 10px auto;
+  border: 1px solid gray;
+}
+
+.scroll-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 40px 0;
+  gap: 15px;
+}
+
+.card-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 30px;
+  width: 100%;
+  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.card-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.card-container span {
+  display: block;
+  min-width: 1px;
+  height: 1px;
+}
+
+.card {
+  min-width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 12px;
+  scroll-snap-align: start;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+  transition: 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card h5 {
+  margin: 15px 0 10px 20px;
+  margin-top: 20px;
+  color: #000;
+  font-size: 16px;
+}
+
+.line1 hr {
+  width: 80%;
+  margin: 10px auto;
+  margin-top: 30px;
+  border: 1px solid gray;
+}
+
+.card button {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 35px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: #b73737;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 25px rgba(31, 2, 2, 0.2);
+}
+
+.card button:hover {
+  background-color: #9c2e2e;
+}
+
+.scroll-arrow {
+  font-size: 28px;
+  background-color: #b73737;
+  color: white;
+  padding: 12px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.scroll-arrow:hover {
+  background-color: #9c2e2e;
+}
+
+.scroll-arrow.left {
+  margin-left: 10px;
+}
+
+.scroll-arrow.right {
+  margin-right: 10px;
+}
+/*page6 */
+.page6 {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('https://templatemo.com/templates/templatemo_569_edu_meeting/assets/images/facts-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.facts-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.left-stats h1 {
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: white;
+  padding-left: 10px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.stat-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  min-width: 200px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.stat-box h3 {
+  font-size: 30px;
+  color: #FFA500;
+  margin-bottom: 10px;
+}
+
+.stat-box p {
+  color: white;
+  font-size: 15px;
+}
+
+.video-wrapper {
+  max-width: 420px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+/* Summary Styles */
+.video-wrapper summary {
+  list-style: none;
+  cursor: pointer;
+  display: block;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.video-wrapper summary::-webkit-details-marker {
+  display: none; 
+}
+
+.video-wrapper[open] summary {
+  display: none; 
+}
+
+
+.video-thumb {
+  position: relative;
+}
+
+.video-thumb img {
+  width: 100%;
+  height: 450px;
+  padding-top: 20px;
+  display: block;
+  filter: brightness(0.8);
+  border-radius: 20px;
+}
+
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 165, 0, 0.9);
+  padding: 18px;
+  border-radius: 50%;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.play-button:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.video-player {
+  margin-top: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.video-player iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 20px;
+  display: block;
+}
+/*footer */
+.footer {
+  background-image: url(https://templatemo.com/templates/templatemo_569_edu_meeting/assets/images/meetings-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  height: 105vh;
+  width:100vw ;
+  margin-bottom: 0;
+}
+
+.contact-box {
+  display: flex;
+  gap: 40px;
+  background-color: transparent;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* Left: Contact Form */
+.contact-container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 30px;
+  flex: 1 1 65%;
+  width: 400px;
+  height: 500px;
+  box-shadow: 5px 5px 20px rgba(53, 11, 11, 0.2);
+}
+
+.contact-title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.line {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin-bottom: 30px;
+}
+
+.contact-form .form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  background-color: #f4f4f4;
+  font-size: 14px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.contact-form input {
+  flex: 1;
+  min-width: 240px;
+}
+.contact-form button a{
+  text-decoration: none;
+  color: white;
+  transition: background 0.3s ease;
+}
+.contact-form textarea {
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  background-color: #b80000;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #990000;
+}
+
+/* Right: Info */
+.contact-info {
+  flex: 1 1 30%;
+  background-color: #a12c2f;
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  font-size: 15px;
+  height: fit-content;
+}
+
+.contact-info p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.contact-info strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.contact-info hr {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 15px 0;
+}
+
+.main-footer {
+  text-align: center;
+  padding: 40px 20px 20px;
+  background: transparent;
+  background-image: url(https://templatemo.com/templates/templatemo_569_edu_meeting/assets/images/meetings-bg.jpg);
+  color: white;
+  font-size: 14px;
+  width: 100vw;
+}
+
+.main-footer .footer-line {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+}
+
+.main-footer  span{
+  color: #d68910;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .contact-box {
+    flex-direction: column;
+  }
+
+  .contact-container,
+  .contact-info {
+    width: 100%;
+  }
+
+  .contact-info {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    margin-top: 20px;
+  }
+}
